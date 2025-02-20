@@ -7,15 +7,15 @@
 </head>
 <body>
     <button onclick="deletebtn()">Delete</button>
-    <h2 id="h2"></h2>
+    <p id="p"></p>
     <script>
         function deletebtn(){
             flag=confirm('You want to delete');
             if(flag==true){
-                document.getElementById('h2').innerHTML='<i><font color=green>Deleted Succesfully..</font></i>'
+                document.getElementById('p').outerHTML='<h1><i><font color=green>Deleted Sucessfully..</font></i></h1>'
             }
             else{
-                document.getElementById('h2').innerHTML='<i><font color=red>Delete Canceled..</font></i>'
+                document.getElementById('p').outerHTML='<h1><i><font color=red>Deleted Sucessfully..</font></i></h1>'
             }
         }
     </script>
